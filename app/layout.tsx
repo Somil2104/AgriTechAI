@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import { Menu } from "@/components/navbar/navigationMegaMenu";
 import Providers from "@/components/providers";
+import React from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
