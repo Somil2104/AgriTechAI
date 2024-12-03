@@ -17,7 +17,7 @@ import { ChevronDownIcon, Link } from 'lucide-react'
 import Search from '@/components/ui/search'
 import { products,callsToAction } from '@/const/navbar'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-export default function Navbar1() {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
