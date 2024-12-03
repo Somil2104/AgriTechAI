@@ -1,4 +1,3 @@
-```markdown
 # AgriMarket 🌾  
 A modern marketplace for agricultural products and services, integrated with cutting-edge features like agricultural consultancy and AI-based plant disease prediction.
 
@@ -126,4 +125,3 @@ _A snapshot of the marketplace homepage._
 ---
 
 Happy farming! 🚜🌱  
-```  
