@@ -1,13 +1,14 @@
 import React from "react";
 import SwiperComponent from "./SwiperComponent";
+import Image from "next/image";
 
 const HeroSection: React.FC = () => {
   return (
     <section className="relative h-full w-full pt-44 bg-green-100">
       <SwiperComponent />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-around py-20 items-center">
-          <div className="text-center md:text-left max-w-2xl">
+        <div className="flex justify-around py-20 items-center flex-col md:flex-row ">
+          <div className="text-center md:text-left max-w-2xl order-2 md:order-1">
             <h1 className="text-4xl md:text-5xl font-bold text-green-800 leading-tight">
               Empower Your Farm with AI
             </h1>
@@ -30,10 +31,12 @@ const HeroSection: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col w-80 ">
-            <img
+          <div className="flex flex-col w-80 order-1 md:order-2 py-6">
+            <Image
               src="/img/hero.webp"
               alt="AI Agriculture"
+              width={1000}
+              height={1000}
               className="w-full rounded-lg shadow-lg"
             />
             <div className="flex justify-center p-4 bg-background rounded-full shadow-md">
