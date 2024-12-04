@@ -6,8 +6,9 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './slidersample.css';
 import { Autoplay, Navigation } from 'swiper/modules';
+import { CarousalData } from '@/const/caraousals';
 
-export default function Caraousal({ data, imgurl}: { data: object[], imgurl: string }) {
+export default function Caraousal({ data, imgurl}: { data: CarousalData[], imgurl: string }) {
 
   return (
     <div className='bg-black text-black'>
@@ -30,7 +31,7 @@ export default function Caraousal({ data, imgurl}: { data: object[], imgurl: str
         modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
-        {data.map((item, index) => (
+        {data.map((item: CarousalData, index) => (
           <SwiperSlide key={index}>
             <div className="flex flex-col h-[350px] w-[350px]">
               <div className='h-[80%]'> 
