@@ -188,7 +188,7 @@ const Footer = () => {
               Download
             </h1>
             <p className="mt-6">
-              Shining new app made just for you! <br></br> It's Free, Easy &
+              Shining new app made just for you! <br></br> It&apos;s Free, Easy &
               Smart!
             </p>
             <div className="flex flex-col md:flex-row justify-evenly">
