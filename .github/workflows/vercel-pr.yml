@@ -3,9 +3,11 @@ on:
   pull_request:
     branches:
       - main
+      
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
     permissions:
       contents: write
       pull-requests: write
