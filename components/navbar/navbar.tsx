@@ -17,11 +17,13 @@ import { ChevronDownIcon, Link } from 'lucide-react'
 import Search from '@/components/ui/search'
 import { products,callsToAction } from '@/const/navbar'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-export default function Navbar() {
+import { ModeToggle } from './toggle'
+import { cn } from '@/lib/utils'
+export default function Navbar({ className }: { className?: string }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-lime-500 border-2 z-20 border-gray-400/80 fixed top-0 w-full">
+    <header className={cn("bg-lime-500 border-2 z-20 border-gray-400/80 fixed top-0 w-full",className)}>
 
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-4 ">
         <div className="flex lg:flex-1 ">
@@ -106,6 +108,7 @@ export default function Navbar() {
           <a href="#" className="text-md font-semibold leading-6 text-black rounded-md dark:bg-lime-200 bg-white p-2">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
+          <ModeToggle/>
         </div>
         
       </nav>

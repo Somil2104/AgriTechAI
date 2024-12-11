@@ -15,9 +15,10 @@ import {
 import { megaMenuData } from "@/const/navbar"
 
 
-export function Menu() {
+export function Menu({ className }: { className?: string }) {
   return (
-    <NavigationMenu className="">
+    <NavigationMenu 
+    className={cn("bg-transparent",className)}>
       <NavigationMenuList className="space-x-4" >
         {
         megaMenuData.map((item,i) => {
