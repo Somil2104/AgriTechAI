@@ -485,9 +485,10 @@ export const agriculturalMachines: CarousalData[] = [
     },
 ];
 
+
 export const fertilizerimgurl =
-    "https://hips.hearstapps.com/hmg-prod/images/farmer-giving-granulated-fertilizer-to-young-tomato-royalty-free-image-1676657512.jpg?access_token=8c576148-1477-42a3-ade8-2da256ef5119";
+    "/img/germinated-seed.jpg";
 export const agriculturalMachinesimgurl =
-    "https://www.fieldking.com/blogs/wp-content/uploads/2022/11/Agriculture-Machine.jpg";
+    "/img/Agriculture-Machine.jpg";
 export const seedsimgurl =
-    "https://science4fun.info/wp-content/uploads/2018/07/germinated-seed.jpg";
+    "/img/seeds.jpg";

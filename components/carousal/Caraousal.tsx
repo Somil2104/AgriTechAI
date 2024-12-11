@@ -4,15 +4,15 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import style from "./slidersample.module.css"
 import { Autoplay, Navigation } from 'swiper/modules';
 import { CarousalData } from '@/const/caraousals';
+import Image from 'next/image';
 
-export default function Caraousal({ data, imgurl}: { data: CarousalData[], imgurl: string }) {
+export default function Caraousal({ title, data, imgurl}: { title: string, data: CarousalData[], imgurl: string }) {
 
   return (
-    <div className='bg-black text-black'>
-      <h1>Carousel</h1>
+    <div className='bg-black text-black w-screen px-10'>
+      <h1 className='text-white text-center text-4xl my-10'>{title}</h1>
       <Swiper
         slidesPerView={6}
         spaceBetween={50}
@@ -29,13 +29,13 @@ export default function Caraousal({ data, imgurl}: { data: CarousalData[], imgur
         }}
         navigation={true}
         modules={[Autoplay, Navigation]}
-        className="mySwiper"
+        className="w-full h-[45%] mt-[20px] mySwiper"
       >
         {data.map((item: CarousalData, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide className='text-center text-[18px] bg-white min-w-fit pb-2 flex items-center justify-center' key={index}>
             <div className="flex flex-col h-[350px] w-[350px]">
               <div className='h-[80%]'> 
-              <img src={imgurl} alt="img" className='h-full' />
+              <Image width={350} height={250} src={imgurl} alt="img" className='h-full w-full block object-cover' />
               </div>
               <div>
                 <div className="text-2xl font-bold">{item.name}</div>
