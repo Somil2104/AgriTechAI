@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { CarousalData } from '@/const/caraousals';
 import Image from 'next/image';
+import Link from 'next/link'
 
 export default function Caraousal({ title, data, imgurl}: { title: string, data: CarousalData[], imgurl: string }) {
 
