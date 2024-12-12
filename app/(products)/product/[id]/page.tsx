@@ -1,4 +1,7 @@
 import { fertilizerimgurl } from "@/const/caraousals";
+import Image from "next/image";
+import styles from "./app/ProductPage.module.css";
+
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params; // Await the `params` promise to retrieve `id`
 
