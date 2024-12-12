@@ -25,10 +25,6 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
   };
 
   // Determine the class name based on `id`
-  const containerClass =
-    id === '1'
-      ? 'h-screen flex flex-col items-center justify-center bg-blue-500'
-      : 'h-screen flex flex-col items-center justify-center bg-red-500';
 
         return (
         <div className={styles.productPage}>
