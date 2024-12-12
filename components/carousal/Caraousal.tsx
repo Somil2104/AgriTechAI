@@ -37,11 +37,13 @@ export default function Caraousal({ title, data, imgurl}: { title: string, data:
               <div className='h-[80%]'> 
               <Image width={350} height={250} src={imgurl} alt="img" className='h-full w-full block object-cover' />
               </div>
-              <div>
-                <div className="text-2xl font-bold">{item.name}</div>
-                <div className="text-xl font-bold">{item.description.length > 50 ? item.description.slice(0, 50) + "..." : item.description}</div>
-                <div className="text-xl font-bold">${item.price_per_kg}</div>
-              </div>
+                <Link href = "/product/:id">
+                  <div>
+                    <div className="text-2xl font-bold">{item.name}</div>
+                    <div className="text-xl font-bold">{item.description.length > 50 ? item.description.slice(0, 50) + "..." : item.description}</div>
+                    <div className="text-xl font-bold">${item.price_per_kg}</div>
+                  </div>
+                </Link>
               </div>
           </SwiperSlide>
         ))}
